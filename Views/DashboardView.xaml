@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="Reni_Cafe.Views.DashboardView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Background="#FFF5F7">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border Background="#FFE3EC" Padding="20">
+            <DockPanel>
+                <TextBlock Text="RENI CAFÉ" FontSize="24" FontWeight="Bold" VerticalAlignment="Center"/>
+                <Button Content="Đăng xuất" DockPanel.Dock="Right" Padding="16,8" Command="{Binding LogoutCommand}"/>
+            </DockPanel>
+        </Border>
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="{Binding Title}" FontSize="32" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBlock Text="Chào mừng đến hệ thống quản lý!" FontSize="16" Margin="0,12,0,0"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

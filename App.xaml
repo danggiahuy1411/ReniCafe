@@ -1,0 +1,14 @@
+﻿<Application x:Class="Reni_Cafe.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="clr-namespace:Reni_Cafe.ViewModels"
+             xmlns:view="clr-namespace:Reni_Cafe.Views">
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type vm:LoginViewModel}">
+            <view:LoginView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:DashboardViewModel}">
+            <view:DashboardView/>
+        </DataTemplate>
+    </Application.Resources>
+</Application>

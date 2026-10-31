@@ -1,0 +1,11 @@
+﻿<Window x:Class="Reni_Cafe.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Reni Café"
+        Height="650" Width="1000"
+        MinHeight="450" MinWidth="700"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <ContentControl Content="{Binding CurrentViewModel}"/>
+    </Grid>
+</Window>
