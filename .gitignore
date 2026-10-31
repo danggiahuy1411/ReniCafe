@@ -426,3 +426,16 @@ FodyWeavers.xsd
 
 # Official VS Code C# Dev Kit Extension exclusion
 #*.lscache
+
+# Temporary archive & build package files
+*.7z
+*.zip
+*.rar
+
+# Visual Studio Code workspace settings (if anyone on the team uses VS Code)
+.vscode/
+
+# Local database files (SQL LocalDB / SQLite if used later)
+*.db
+*.sqlite
+*.sqlite3
